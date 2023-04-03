@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My fitness centre</title>
+   
+
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url(bg1.jpg);
+        font-family: 'Alkatra', cursive;
+        
+    }
+    .left{
+       
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        left: 35px;
+    }
+    .mid{
+       
+        display: block;
+        width: 33%;
+        margin: 18px auto;
+    }
+    .right{
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        right: 35px;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 17px;
+    }
+    .navbar li a{
+        color: aliceblue;
+        text-decoration: none;
+        padding: 20px 20px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: aqua;
+       
+    }
+    .left img{
+        width: 85px;
+        filter: invert();
+    }
+    .tc{
+        color: aliceblue;
+    }
+    .btn{
+        margin: 0px 10px;
+        background-color: black;
+        color: aliceblue;
+        font-size:larger;
+        padding: 4px 14px;
+        border: 3px solid rgb(96, 96, 47);
+        border-radius: 14px;
+        font-size: 12px;
+        cursor: pointer;
+        font-family: 'Alkatra', cursive;
+    }
+    .btn:hover{
+        background-color: rgb(82, 82, 30);
+        border: 1px solid yellow;
+    }
+    .container{
+        color: yellow;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 27%;
+        border-radius: 25px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 2px;
+        border: 2px solid black;
+        margin: 3px auto;
+        font-size: 24px;
+        border-radius: 4px;
+        font-family: 'Alkatra', cursive;
+    }
+    .container h1{
+        text-align: center;
+        color: rgb(217, 244, 8);
+    }
+    .container button{
+        display: block;
+        width: 28%;
+        margin: auto;
+    }
+</style>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap" rel="stylesheet">
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div class="tc">My Fitness Center</div>     
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best zym of you area</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your height">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your weight">
+            </div>
+            <button class="btn">Submit</button>
+
+        </form>
+    </div>    
+</body>
+</html>
